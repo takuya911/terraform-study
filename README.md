@@ -3,5 +3,5 @@
 ## applyコマンド
 
 ```
-$ terraform destroy -var-file=${var file}
+$ terraform apply -var-file=${var file}
 ```
