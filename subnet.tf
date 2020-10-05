@@ -1,5 +1,5 @@
 resource "aws_subnet" "public_1a" {
-  vpc_id = "${aws_vpc.main.id}"
+  vpc_id            = "${aws_vpc.main.id}"
   availability_zone = "ap-northeast-1a"
   cidr_block        = "10.0.1.0/24"
   tags = {
@@ -9,7 +9,7 @@ resource "aws_subnet" "public_1a" {
 
 # Private Subnets
 resource "aws_subnet" "private_1a" {
-  vpc_id = "${aws_vpc.main.id}"
+  vpc_id            = "${aws_vpc.main.id}"
   availability_zone = "ap-northeast-1a"
   cidr_block        = "10.0.10.0/24"
   tags = {
@@ -22,7 +22,7 @@ resource "aws_subnet" "public_1c" {
 
   availability_zone = "ap-northeast-1c"
 
-  cidr_block        = "10.0.2.0/24"
+  cidr_block = "10.0.2.0/24"
 
   tags = {
     Name = "go-pf-public-1c"
@@ -45,7 +45,7 @@ resource "aws_subnet" "public_1d" {
 
   availability_zone = "ap-northeast-1d"
 
-  cidr_block        = "10.0.3.0/24"
+  cidr_block = "10.0.3.0/24"
 
   tags = {
     Name = "go-pf-public-1d"
